@@ -1,13 +1,21 @@
-def add(a, b):
-    total = a + b
-    return total
+class Parent():
+    @staticmethod
+    def area():
+        pass
 
-def main():
-    x = int(input("x = "))
-    y = int(input("y = "))
-    result = add(x, y)   # <-- এখানে breakpoint বসাবেন
-    print("Result:", result)
 
-if __name__ == "__main__":
-    main()
-    
+class Baby(Parent):
+    @staticmethod
+    def area():
+        print(f"Here is the baby")
+
+
+my_baby = Baby()
+
+my_baby.area()
+
+
+
+
+
+
